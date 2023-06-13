@@ -22,9 +22,4 @@ phases:
       - echo '[{"name":"rohitnodeapp","imageUri":"public.ecr.aws/r8u4k8a1/nodeimages","containerPort":3000}]' > imagedefinitions.json
 
 artifacts:
-  files:
-    - '**/*'
-  secondary-artifacts:
-    imagedefinitions:
-      files:
-        - imagedefinitions.json
+  files: imagedefinitions.json
